@@ -31,7 +31,7 @@ public ExtentTest logger;
 	@BeforeSuite
 	public void setUpSuit() {
 		
-		Reporter.log("Setting up reports and Test is getting ready ",true);
+	Reporter.log("Setting up reports and Test is getting ready ",true);
 	
 	excel=new ExcelDataProvider();
 	config =new ConfigDataProvider();
@@ -58,7 +58,7 @@ public ExtentTest logger;
 	@AfterClass
 	public void teardown() throws InterruptedException {
 		Thread.sleep(2000);
-		BrowserFactory.quitbrowser(driver);
+		//BrowserFactory.quitbrowser(driver);
 	}
 	
 	@AfterMethod

@@ -14,14 +14,26 @@ WebDriver driver;
 	}
 	//Verifying login page elements
 	
-	@FindBy(name="ctl00$CPHContainer$txtUserLogin") WebElement email;
+	@FindBy(xpath="//*[@id=\"email\"]") WebElement email;
 	
-	@FindBy(name="ctl00$CPHContainer$txtPassword") WebElement password;
+	@FindBy(xpath="//*[@id=\"pass\"]") WebElement password;
 	
-	@FindBy(xpath="//*[@id=\"ctl00_CPHContainer_btnLoginn\"]") WebElement loginbutton;
+	@FindBy(xpath="//*[@id=\"loginbutton\"]") WebElement loginbutton;
+	
+	@FindBy(xpath="//*[@id=\"blueBarDOMInspector\"]/div/div/div/div[1]/h1/a/i") WebElement Logo;
 	
 	
-	public void LoginToCRM(String email1, String password1) throws InterruptedException {
+	public String ValidateFBLoginPageTitle() {
+		
+		return driver.getTitle();
+	}
+	
+	public boolean ValidateFBLoginPageLogo() {
+		
+		return Logo.isDisplayed();
+	}
+	
+	public void ValidateLoginToFB(String email1, String password1) throws InterruptedException {
 		
 		//Fill login page text boxes and click login
 		Thread.sleep(2000);
