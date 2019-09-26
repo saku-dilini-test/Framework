@@ -14,23 +14,31 @@ public class LoginTestCRM extends BaseClass {
 	
 	
 	@Test(priority=1)
-	public String FBLoginPageTitleTest() {
+	public void FBLoginPageTitleTest() {
+		
+		logger=report.createTest("FB Page Title ");
 		
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-		return loginPage.ValidateFBLoginPageTitle();
+		loginPage.ValidateFBLoginPageTitle();
+		
+		logger.pass("FB title is correct"); 
 	}
 	
 	@Test(priority=2)
 	public void FBLoginPageLogoTest() {
 		
+		logger=report.createTest("FB page Logo ");
+		
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 		loginPage.ValidateFBLoginPageLogo();
+		
+		logger.pass("Logo is available"); 
 	}
 
 	@Test(priority=3)
 	public void LoginApp() throws InterruptedException {
 		
-		logger=report.createTest("Login to CRM");
+		logger=report.createTest("Login to FB");
 		
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 		

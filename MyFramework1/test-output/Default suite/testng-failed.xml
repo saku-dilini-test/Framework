@@ -7,7 +7,10 @@
         <methods>
           <include name="LoginApp"/>
           <include name="teardown"/>
+          <include name="FBLoginPageLogoTest"/>
           <include name="setup"/>
+          <include name="setUpSuit"/>
+          <include name="teardownMethod"/>
         </methods>
       </class> <!-- com.automation.testcases.LoginTestCRM -->
     </classes>

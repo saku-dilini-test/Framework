@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="com.automation.testcases.LoginTestCRM">
         <methods>
           <include name="LoginApp"/>
           <include name="teardown"/>
+          <include name="FBLoginPageLogoTest"/>
           <include name="setup"/>
           <include name="setUpSuit"/>
           <include name="teardownMethod"/>
         </methods>
       </class> <!-- com.automation.testcases.LoginTestCRM -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

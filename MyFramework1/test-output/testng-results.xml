@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
     <line>
       <![CDATA[Setting up reports and Test is getting ready ]]>
@@ -19,13 +19,25 @@
     <line>
       <![CDATA[Test completed >>> Reports generated ]]>
     </line>
+    <line>
+      <![CDATA[Test is about to end ]]>
+    </line>
+    <line>
+      <![CDATA[Test completed >>> Reports generated ]]>
+    </line>
+    <line>
+      <![CDATA[Test is about to end ]]>
+    </line>
+    <line>
+      <![CDATA[Test completed >>> Reports generated ]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="14793" started-at="2019-09-23T03:50:30Z" finished-at="2019-09-23T03:50:44Z">
+  <suite name="Default suite" duration-ms="28782" started-at="2019-09-26T02:30:57Z" finished-at="2019-09-26T02:31:26Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="14793" started-at="2019-09-23T03:50:30Z" finished-at="2019-09-23T03:50:44Z">
+    <test name="Default test" duration-ms="28782" started-at="2019-09-26T02:30:57Z" finished-at="2019-09-26T02:31:26Z">
       <class name="com.automation.testcases.LoginTestCRM">
-        <test-method status="PASS" signature="setUpSuit()[pri:0, instance:com.automation.testcases.LoginTestCRM@28d25987]" name="setUpSuit" is-config="true" duration-ms="1380" started-at="2019-09-23T09:20:28Z" finished-at="2019-09-23T09:20:30Z">
+        <test-method status="PASS" signature="setUpSuit()[pri:0, instance:com.automation.testcases.LoginTestCRM@28d25987]" name="setUpSuit" is-config="true" duration-ms="696" started-at="2019-09-26T08:00:56Z" finished-at="2019-09-26T08:00:57Z">
           <reporter-output>
             <line>
               <![CDATA[Setting up reports and Test is getting ready ]]>
@@ -35,7 +47,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUpSuit -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.automation.testcases.LoginTestCRM@28d25987]" name="setup" is-config="true" duration-ms="5881" started-at="2019-09-23T09:20:30Z" finished-at="2019-09-23T09:20:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.automation.testcases.LoginTestCRM@28d25987]" name="setup" is-config="true" duration-ms="6311" started-at="2019-09-26T08:00:57Z" finished-at="2019-09-26T08:01:03Z">
           <reporter-output>
             <line>
               <![CDATA[Trying to start Browser and Getting applicaton ready ]]>
@@ -45,15 +57,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="LoginApp()[pri:0, instance:com.automation.testcases.LoginTestCRM@28d25987]" name="LoginApp" duration-ms="5938" started-at="2019-09-23T09:20:36Z" finished-at="2019-09-23T09:20:42Z">
+        <test-method status="PASS" signature="FBLoginPageTitleTest()[pri:1, instance:com.automation.testcases.LoginTestCRM@28d25987]" name="FBLoginPageTitleTest" duration-ms="47" started-at="2019-09-26T08:01:03Z" finished-at="2019-09-26T08:01:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginApp -->
-        <test-method status="PASS" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.LoginTestCRM@28d25987]" name="teardownMethod" is-config="true" duration-ms="812" started-at="2019-09-23T09:20:42Z" finished-at="2019-09-23T09:20:42Z">
+        </test-method> <!-- FBLoginPageTitleTest -->
+        <test-method status="PASS" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.LoginTestCRM@28d25987]" name="teardownMethod" is-config="true" duration-ms="2666" started-at="2019-09-26T08:01:04Z" finished-at="2019-09-26T08:01:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginApp status=SUCCESS method=LoginTestCRM.LoginApp()[pri:0, instance:com.automation.testcases.LoginTestCRM@28d25987] output={null}]]]>
+                <![CDATA[[TestResult name=FBLoginPageTitleTest status=SUCCESS method=LoginTestCRM.FBLoginPageTitleTest()[pri:1, instance:com.automation.testcases.LoginTestCRM@28d25987] output={null}]]]>
               </value>
             </param>
           </params>
@@ -66,11 +78,53 @@
             </line>
           </reporter-output>
         </test-method> <!-- teardownMethod -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automation.testcases.LoginTestCRM@28d25987]" name="teardown" is-config="true" duration-ms="2135" started-at="2019-09-23T09:20:42Z" finished-at="2019-09-23T09:20:44Z">
+        <test-method status="PASS" signature="FBLoginPageLogoTest()[pri:2, instance:com.automation.testcases.LoginTestCRM@28d25987]" name="FBLoginPageLogoTest" duration-ms="79" started-at="2019-09-26T08:01:06Z" finished-at="2019-09-26T08:01:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FBLoginPageLogoTest -->
+        <test-method status="PASS" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.LoginTestCRM@28d25987]" name="teardownMethod" is-config="true" duration-ms="2356" started-at="2019-09-26T08:01:06Z" finished-at="2019-09-26T08:01:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FBLoginPageLogoTest status=SUCCESS method=LoginTestCRM.FBLoginPageLogoTest()[pri:2, instance:com.automation.testcases.LoginTestCRM@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test is about to end ]]>
+            </line>
+            <line>
+              <![CDATA[Test completed >>> Reports generated ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- teardownMethod -->
+        <test-method status="PASS" signature="LoginApp()[pri:3, instance:com.automation.testcases.LoginTestCRM@28d25987]" name="LoginApp" duration-ms="12380" started-at="2019-09-26T08:01:09Z" finished-at="2019-09-26T08:01:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginApp -->
+        <test-method status="PASS" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.LoginTestCRM@28d25987]" name="teardownMethod" is-config="true" duration-ms="2719" started-at="2019-09-26T08:01:21Z" finished-at="2019-09-26T08:01:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginApp status=SUCCESS method=LoginTestCRM.LoginApp()[pri:3, instance:com.automation.testcases.LoginTestCRM@28d25987] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test is about to end ]]>
+            </line>
+            <line>
+              <![CDATA[Test completed >>> Reports generated ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- teardownMethod -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automation.testcases.LoginTestCRM@28d25987]" name="teardown" is-config="true" duration-ms="2193" started-at="2019-09-26T08:01:24Z" finished-at="2019-09-26T08:01:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.automation.testcases.LoginTestCRM -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

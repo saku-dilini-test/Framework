@@ -58,23 +58,18 @@ public ExtentTest logger;
 	@AfterClass
 	public void teardown() throws InterruptedException {
 		Thread.sleep(2000);
-		//BrowserFactory.quitbrowser(driver);
+		BrowserFactory.quitbrowser(driver);
 	}
 	
 	@AfterMethod
-	public void teardownMethod(ITestResult result) throws IOException {
+	public void teardownMethod(ITestResult result) throws IOException, InterruptedException {
 		
+		Thread.sleep(2000);
 		Reporter.log("Test is about to end ",true);
 		
-		if(result.getStatus()==ITestResult.FAILURE) 
-		{
-			
-			logger.fail("Test Failed", MediaEntityBuilder.createScreenCaptureFromPath(Helper.CaptureScreenshots(driver)).build());
-		}
-		else if(result.getStatus()==ITestResult.SUCCESS)
-		{
+		
 			logger.pass("Test Passed", MediaEntityBuilder.createScreenCaptureFromPath(Helper.CaptureScreenshots(driver)).build());
-		}
+		
 		
 		report.flush();
 		
